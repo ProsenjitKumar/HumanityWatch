@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+{% load static %}
+
+
+{% block title %}
+    <title>Donor Available</title>
+{% endblock %}
+
+
+{% block content %}
+    <br><br><br>
+
+    <div style="margin:0 auto;width:15%;text-align:left" class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-chart-area"></i>
+              <h2 style="color: red">No Result Found</h2></div>
+            <div class="card-body">
+              <canvas id="myAreaChart" width="100%" height="30"></canvas>
+            </div>
+    </div>
+
+{% endblock %}

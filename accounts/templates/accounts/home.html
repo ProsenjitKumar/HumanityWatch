@@ -1,0 +1,451 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}<title>Humanity Watch</title>
+<link rel="icon" type="image/jpg" href="{% static 'assets/humanitywatch_image/Humanitywatch Logo -2.jpg' %}"/>
+{% endblock %}
+
+
+{% block content %}
+
+      <!-- Carousel
+    ================================================== -->
+    <div id="homeCarousel" class="carousel slide carousel-home" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#homeCarousel" data-slide-to="1"></li>
+            <li data-target="#homeCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+
+              <img src="{% static 'assets/humanitywatch_image/img1.jpg' %}" alt="">
+
+              <div class="container">
+
+                <div class="carousel-caption">
+
+                  <h2 class="carousel-title bounceInDown animated slow">Because they need your help</h2>
+                  <h4 class="carousel-subtitle bounceInUp animated slow ">Do not let them down</h4>
+                  <button class="button" style="padding: 15px 25px; background-color: #115c9b;"><a href="{% url 'blood_donor_form' %}" >JOIN
+                      NOW</a></button>
+
+                </div> <!-- /.carousel-caption -->
+
+              </div>
+
+            </div> <!-- /.item -->
+
+
+            <div class="item ">
+
+              <img src="{% static 'assets/humanitywatch_image/img.jpg' %}" alt="">
+
+              <div class="container">
+
+                <div class="carousel-caption">
+
+                  <h2 class="carousel-title bounceInDown animated slow">Together we can improve their lives</h2>
+                  <h4 class="carousel-subtitle bounceInUp animated slow"> So let's do it !</h4>
+                  <button class="button" style="padding: 15px 25px; background-color: #115c9b;"><a href="{% url 'blood_donor_form' %}" >JOIN
+                      NOW</a></button>
+
+                </div> <!-- /.carousel-caption -->
+
+              </div>
+
+            </div> <!-- /.item -->
+
+
+
+
+            <div class="item ">
+
+              <img src="{% static 'assets/humanitywatch_image/img3.jpg' %}" alt="">
+
+              <div class="container">
+
+                <div class="carousel-caption">
+
+                  <h2 class="carousel-title bounceInDown animated slow" >A penny is a lot of money, if you have not got a penny.</h2>
+                  <h4 class="carousel-subtitle bounceInUp animated slow">You can make the diffrence !</h4>
+                  <button class="button" style="padding: 15px 25px; background-color: #115c9b;"><a href="{% url 'register' %}" >JOIN
+                      NOW</a></button>
+
+                </div> <!-- /.carousel-caption -->
+
+              </div>
+
+            </div> <!-- /.item -->
+
+          </div>
+
+          <a class="left carousel-control" href="#homeCarousel" role="button" data-slide="prev">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+
+          <a class="right carousel-control" href="#homeCarousel" role="button" data-slide="next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+
+    </div><!-- /.carousel -->
+
+    <div class="section-home about-us fadeIn animated">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-3 col-sm-6">
+
+                  <div class="about-us-col">
+
+                        <div class="col-icon-wrapper">
+                          <img src="{% static 'assets/images/icons/our-mission-icon.png' %}" alt="">
+                        </div>
+                        <h3 class="col-title">our mission</h3>
+                        <div class="col-details">
+
+                          <p>To establish poverty free, environment friendly secular society of equity.</p>
+
+                        </div>
+                        <a href="{% url 'mission_vision' %}" class="btn btn-primary"> Read more </a>
+
+                  </div>
+
+                </div>
+
+
+                <div class="col-md-3 col-sm-6">
+
+                  <div class="about-us-col">
+
+                        <div class="col-icon-wrapper">
+                          <img src="{% static 'assets/images/icons/make-donation-icon.png' %}" alt="">
+                        </div>
+                        <h3 class="col-title">Make donations</h3>
+                        <div class="col-details">
+
+                          <p>Blood donation in Bangladesh is an activity conducted by several different organisations.
+                              </p>
+
+                        </div>
+                        <a href="{% url 'register' %}" class="btn btn-primary"> Read more </a>
+
+                  </div>
+
+                </div>
+
+
+                <div class="col-md-3 col-sm-6">
+
+                  <div class="about-us-col">
+
+                        <div class="col-icon-wrapper">
+                          <img src="{% static 'assets/images/icons/help-icon.png' %}" alt="">
+                        </div>
+                        <h3 class="col-title">Help & support</h3>
+                        <div class="col-details">
+
+                          <p>
+                              Shariful Islam Salim
+                              General Secretary
+                              Humanitywatch
+                          </p>
+
+                        </div>
+                        <a href="{% url 'contact' %}" class="btn btn-primary"> Read more </a>
+
+                  </div>
+
+                </div>
+
+
+                <div class="col-md-3 col-sm-6">
+
+                  <div class="about-us-col">
+
+                        <div class="col-icon-wrapper">
+                          <img src="{% static 'assets/images/icons/programs-icon.png' %}" alt="">
+                        </div>
+                        <h3 class="col-title">our programs</h3>
+                        <div class="col-details">
+
+                          <p>Towards its vision and mission Humanitywatch joined in several national and international</p>
+
+                        </div>
+                        <a href="{% url 'organization' %}" class="btn btn-primary"> Read more </a>
+
+                  </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div> <!-- /.about-us -->
+
+    <div class="section-home home-reasons">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div class="reasons-col animate-onscroll fadeIn">
+
+                        <img src="{% static 'assets/humanitywatch_image/img9.JPG' %}" alt="">
+
+                        <div class="reasons-titles">
+
+                            <h3 class="reasons-title">We fight together</h3>
+                            <h5 class="reason-subtitle">We are humans</h5>
+
+                        </div>
+
+                        <div class="on-hover hidden-xs">
+
+                                <p> Alternative Members:
+                                        The Alternative Members are main force of the organization.
+                                    They are selected from social, political, cultural and peoples movements,
+                                    and from students who desire a change in the society.
+                                    Alternative Members are involved in the Blood Donation Program,
+                                    Campaign, Research and Advocacy programmes. Each year a number of
+                                    Alternative Members get full membership  according to their performance,
+                                    devotion and contribution to the objectives of Humanitywatch.</p>
+
+
+                                <p>Forest peoples, Small and marginal farmers, Indigenous communities and socially
+                                    excluded groups, working Children, agro labours and labours in the informal sectors.
+                                </p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div class="reasons-col animate-onscroll fadeIn">
+
+                        <img src="{% static 'assets/humanitywatch_image/DSC04199.JPG' %}" alt="">
+
+                        <div class="reasons-titles">
+
+                            <h3 class="reasons-title">WE care about others</h3>
+                            <h5 class="reason-subtitle">We are humans</h5>
+
+                        </div>
+
+                        <div class="on-hover hidden-xs">
+
+                                <p> Humanitywatch is a nongovernment nonprofit making voluntary organization formed in
+                                    1998 by some progressive socio cultural activists to work for common goods.</p>
+
+
+                                <p> Humanitywatch obtained legal status on 13 February 2005 under the Societies Act
+                                    XXI of Bangladesh vide registration number 119/2005.</p>
+
+                                <p>Humanitywatch is mainly depends on voluntary contribution of the members,
+                                    sympathizers and volunteers who  re working intensively with the poor,
+                                    marginal and underprivileged biodiversity dependant people i.e. forest people,
+                                    indigenous communities, marginal farmers and climate forced migrants..</p>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div> <!-- /.home-reasons -->
+
+    <div class="section-home our-causes animate-onscroll fadeIn">
+
+        <div class="container">
+
+            <h2 class="title-style-1">Our Causes <span class="title-under"></span></h2>
+
+            <div class="row">
+
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="cause">
+
+                        <img src="{% static 'assets/humanitywatch_image/HR Day.jpg' %}" alt="" class="cause-img">
+
+                        <div class="progress cause-progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+
+                          </div>
+                        </div>
+
+                        <h4 class="cause-title"><a href="{% url 'blood_donor_form' %}">HUNGER AND POVERTY </a></h4>
+                        <div class="cause-details">
+                            The most densely populated country in the world besides city states,
+                            Bangladesh graduated to lower-middle-income country status in 2015.
+                        </div>
+
+                        <div class="btn-holder text-center">
+
+                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> JOIN NOW</a>
+
+                        </div>
+
+
+
+                    </div> <!-- /.cause -->
+
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="cause">
+
+                        <img src="{% static 'assets/humanitywatch_image/abujor.jpg' %}" alt="" class="cause-img">
+
+                        <div class="progress cause-progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                          </div>
+                        </div>
+
+                        <h4 class="cause-title"><a href="{% url 'blood_donor_form' %}">EDUCATION AND TRAINING</a></h4>
+                        <div class="cause-details">
+                            "Learning" and "training" are often used interchangeably,
+                            but what are the differences between the two? Are there any? And what impact
+                            do they have when people look for eLearning?</div>
+
+                        <div class="btn-holder text-center">
+
+                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> JOIN NOW</a>
+
+                        </div>
+
+
+
+                    </div> <!-- /.cause -->
+
+                </div>
+
+
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="cause">
+
+                        <img src="{% static 'assets/humanitywatch_image/01.jpg' %}" alt="" class="cause-img">
+
+                        <div class="progress cause-progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                          </div>
+                        </div>
+
+                        <h4 class="cause-title"><a href="{% url 'blood_donor_form' %}">HUMAN RIGHTS</a></h4>
+                        <div class="cause-details">
+                            Human right are rights inherent to all human beings,
+                            whatever be our nationality, place of residence, sex,
+                            national or ethnic origin, color, religion, language or any
+                            other status. Every man in the world has the rights to get food,
+                            clothing, shelter, education, and medical service.</div>
+
+                        <div class="btn-holder text-center">
+
+                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> JOIN NOW</a>
+
+                        </div>
+
+
+
+                    </div> <!-- /.cause -->
+
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="cause">
+
+                        <img src="{% static 'assets/humanitywatch_image/Noboborsho Card.jpg' %}" alt="" class="cause-img">
+
+                        <div class="progress cause-progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+
+                          </div>
+                        </div>
+
+                        <h4 class="cause-title"><a href="{% url 'register' %}">ARTS AND CULTURE </a></h4>
+                        <div class="cause-details">
+                            The culture of a society means the way of living, eating habit, cultural functions,
+                            different kinds of festivals, clothes, language, religion, values, policies, tradition etc.
+                            It is the complete picture of a nation and the most important and basic
+                            concept of sociology.</div>
+
+                        <div class="btn-holder text-center">
+
+                          <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#donateModal"> JOIN
+                              NOW</a>
+
+                        </div>
+
+
+
+                    </div> <!-- /.cause -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div> <!-- /.our-causes -->
+
+
+
+
+
+
+    <div class="section-home our-sponsors animate-onscroll fadeIn">
+
+        <div class="container">
+
+            <h2 class="title-style-1">Our Sponsors <span class="title-under"></span></h2>
+
+            <ul class="owl-carousel list-unstyled list-sponsors">
+
+              <li> <img src="{% static 'assets/images/sponsors/bus.png' %}" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/wikimedia.png' %}" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/one-world.png' %}" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/wikiversity.png' %}" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/united-nations.png' %}" alt=""></li>
+
+              <li> <img src="{% static 'assets/images/sponsors/bus.png' %}" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/wikimedia.png' %}" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/one-world.png' %}" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/wikiversity.png' %}" alt=""></li>
+              <li> <img src="{% static 'assets/images/sponsors/united-nations.png' %}" alt=""></li>
+
+            </ul>
+
+        </div>
+
+    </div> <!-- /.our-sponsors -->
+
+
+{% endblock %}

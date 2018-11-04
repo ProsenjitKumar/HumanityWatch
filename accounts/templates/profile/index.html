@@ -1,0 +1,55 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}
+<title>Profile</title>
+{% endblock %}
+
+
+
+{% block content %}
+
+
+    <header class="main-header">
+
+
+
+
+            <div class="navbar-main">
+
+              <div class="container">
+
+
+
+                <div  class="navbar-collapse collapse pull-right">
+
+                  <ul class="nav navbar-nav">
+
+                    <li style="background-color: #0B792F" class="has-child"><a href="{% url 'profile' %}">Your Account</a>
+                      <ul class="submenu">
+                         <li class="submenu-item"><a href="{% url 'last_donation_date' %}">Update Your Last Donation</a></li>
+                         <li class="submenu-item"><a href="{% url 'logout' %}">Logout</a></li>
+                      </ul>
+
+                    </li>
+
+                  </ul>
+
+                </div> <!-- /#navbar -->
+
+              </div> <!-- /.container -->
+
+            </div> <!-- /.navbar-main -->
+
+
+
+    </header>
+
+
+    {% block profile_content %}
+
+    {% endblock %}
+
+
+{% endblock %}
+
+

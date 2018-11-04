@@ -1,0 +1,58 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}
+
+    <title>Registration</title>
+
+{% endblock %}
+
+{% block content %}
+<br><br><br><br>
+
+			<div style="margin:0 auto;width:85%;text-align:left" class="agileits-top">
+				<form id="user_form" method="post" action="/register/" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+					<div class="wthree-text">
+						<label class="anim">
+							<input type="checkbox" class="checkbox" required="">
+							<span>I Agree To The Terms & Conditions</span><br>
+						</label>
+						<div class="clear"> </div>
+					</div><br>
+                    <head>
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                            <style>
+                            .button {
+                            padding: 7px 20px;
+                            font-size: 24px;
+                            text-align: center;
+                            cursor: pointer;
+                            outline: none;
+                            color: #fff;
+                            background-color: #4CAF50;
+                            border: none;
+                            border-radius: 10px;
+                            box-shadow: 0 9px #999;
+                            }
+
+                            .button:hover {background-color: #3e8e41}
+
+                            .button:active {
+                            background-color: #3e8e41;
+                            box-shadow: 0 3px #666;
+                            transform: translateY(4px);
+                            }
+                            </style>
+
+                    </head>
+                    <button class="button">Signup</button>
+				</form><br>
+				<p>Don't have an Account? <a href="{% url 'login' %}"><span style="color: #347e0b">Login Now!</span></a></p>
+			</div>
+
+    <br>
+
+
+{% endblock %}
+

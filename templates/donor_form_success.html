@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}<title>Donor Form Submitted Success</title>
+<link rel="icon" type="image/jpg" href="{% static 'assets/humanitywatch_image/Humanitywatch Logo -2.jpg' %}"/>{% endblock %}
+{% block content %}
+<br>
+    <div style="margin:0 auto;width:85%;text-align:left" class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h2 class="text-white-50 mx-auto mt-2 mb-5" style="color: #078208">Your Blood Donor Form has been
+              created successfully.<br>
+              Please See your name end of this page <button><a href="{% url 'available_donor' %}">Blood Donor List</a>
+              </button>
+              </h2><br>
+
+            <h2><button style="background-color: #a6e1ec"><a href="{% url 'blood_donor_form' %}" style="color: #4CAF50">Blood Donor
+                Form</a>
+              </button></h2>
+        </div>
+    </div><br>
+
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends 'profile/index.html' %}
+{% load static %}
+
+{% block title %}<title>Last Donation</title>{% endblock %}
+
+
+{% block profile_content %}
+    <br><br><br><br>
+
+    <div style="margin:0 auto;width:85%;text-align:left">
+
+        <form id="user_form" method="post" action="/your-last-donation-date/" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+					<div class="wthree-text">
+						<div class="clear"> </div>
+					</div><br>
+                    <head>
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                            <style>
+                            .button {
+                            padding: 7px 20px;
+                            font-size: 24px;
+                            text-align: center;
+                            cursor: pointer;
+                            outline: none;
+                            color: #fff;
+                            background-color: #ba131c;
+                            border: none;
+                            border-radius: 10px;
+                            box-shadow: 0 9px #999;
+                            }
+
+                            .button:hover {background-color: #3e8e41}
+
+                            .button:active {
+                            background-color: #8db426;
+                            box-shadow: 0 3px #666;
+                            transform: translateY(4px);
+                            }
+                            </style>
+
+                    </head>
+                    <button class="button">Update</button>
+				</form>
+
+    </div><br><br><br>
+
+
+    <div style="margin:0 auto;width:85%;text-align:left">
+
+
+        <label style="color: red"; >You gave blood: {{ user.last_donation_date }}</label><br>
+
+
+    </div>
+
+
+
+<br><br><br><br>
+{% endblock %}
